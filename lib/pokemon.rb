@@ -33,5 +33,3 @@ class Pokemon
     binding.pry
    end
 end
-
-#{Pokemon.new(id: 1, name: "Pikachu", type: "electric", db: @db)}
