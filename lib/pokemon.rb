@@ -27,7 +27,7 @@ class Pokemon
         WHERE id = ?
      SQL
 
-     result = db.execute(sql, id).flatten
+     result = db.execute(sql, id)
      Pokemon.new(id:result[0], name:result[1], type:result[2], db:db)
 
     binding.pry
