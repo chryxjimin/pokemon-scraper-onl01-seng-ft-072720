@@ -28,8 +28,8 @@ class Pokemon
      SQL
 
      result = db.execute(sql, id).flatten
-     p = Pokemon.new(id:result[0], name:result[1], type:result[2], db:db)
-    
+     Pokemon.new(id:result[0], name:result[1], type:result[2], db:db)
+
     # binding.pry
    end
 end
